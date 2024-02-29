@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="main.js"></script>
+    <title>Cafetería San</title>
+</head>
+<body onload="slider()"><!--Se manda a llamar al elemento para la carga de fotos-->
+    <!--Principap-->
+    <div class="banner">
+        <div class="slider">
+            <img src="./img/artlatte.jpg" id="sliderImg" >
+        </div>
+        <div class="overlay">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./img/Cafetería_SanTel.png">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#nosotros">Nosotros</a></li>
+                        <li><a href="index.html#productos">Productos</a></li>
+                        <li><a href="index.html#reco">Sucursales</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="contenedorSlider">
+              <h1>Encuentra tu bebida favorita</h1>
+              <h3>Aquí podrás darle gusto a tu paladar</h3>
+          </div>
+      </div>
+  </div>
+
+  <div class="presentacion">
+      <a id="nosotros"></a>
+      <h1>¿Quiénes somos?</h1>
+      <p>
+          Desde su inicio en 2018, Cafetería SanTel se ha convertido en más que un lugar para disfrutar de una taza de café excepcional; es un refugio para los amantes apasionados de esta deliciosa bebida. Aquí, cada taza se elabora con esmero, desde la cuidadosa selección de granos de alta calidad hasta el arte preciso de la preparación.</p>
+  </div>
+
+  <div class="contenedor">
+      <a id="productos"></a>
+      <div class="row">
+          <div class="col-md-4">
+              <div class="caja">
+                  <img src="./img/Cafe.jpg" alt="Cafe SanTel" class="img-fluid rounded-circle">
+                  <h1 class="display-4">Café</h1>
+                  <p class="lead">Deliciosa variedad de bebidas elaboradas a base de café e infusiones de la más alta calidad.</p>
+              </div>
+          </div>
+  
+          <div class="col-md-4">
+              <div class="caja">
+                  <img src="./img/Tiramisu.jpg" alt="Postre SanTel" class="img-fluid rounded-circle">
+                  <h1 class="display-4">Postres</h1>
+                  <p class="lead">Suculentos manjares que apapacharán tu paladar.</p>
+              </div>
+          </div>
+  
+          <div class="col-md-4">
+              <div class="caja">
+                  <img src="./img/chocolate.jpg" alt="Chocolate SanTel" class="img-fluid rounded-circle">
+                  <h1 class="display-4">Chocolatería</h1>
+                  <p class="lead">Combinaciones que con solo oler te harán sentir feliz.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Carrusel de Bootstrap -->
+  <div class="carrusel">
+      <h1> Nuestras sucursales</h1>
+      <h2>(Mixquiahuala, Hidalgo)</h2>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img class="d-block w-100" src="./img/cafeAlolos.jpg" alt="Café Alolos">
+          </div>
+          <div class="carousel-item">
+              <img class="d-block w-100" src="./img/cafeAzulado.jpg" alt="Café Azulado">
+          </div>
+          <div class="carousel-item">
+              <img class="d-block w-100" src="./img/santiagoCafe.jpg" alt="Santiago Café">
+          </div>
+          <div class="carousel-item">
+              <img class="d-block w-100" src="./img/casa-kalo.jpg" alt="Casa Kahlo">
+          </div>
+          <div class="carousel-item">
+              <img class="d-block w-100" src="./img/snacks&coffee.jpg" alt="Snacks & Coffee">
+          </div>
+          <!-- Agrega más elementos carousel-item según sea necesario -->
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </a>
+  </div>
+</div>
+<div class="contenedorD">
+
+  <div class="direccion">
+      <h1>Cafetería Santel-Café Alolos</h1>
+      <div id="direccion1" style="display: none">
+      <p>Es un concepto que te permite disfrutar de un buen café con la compañía que tu desees. <a href="https://maps.app.goo.gl/DeRmJEgZabVrfm2EA">Cómo llegar</a></p>
+  </div>
+  <button onclick='muestra_oculta("direccion1")' class="btn btn-primary" form="direccion1">Ver más</button>
+  </div>
+  <div class="direccion">
+      <h1>Cafetería Santel-CaféAzulado</h1>
+      <div id="direccion2" style="display: none">
+      <p>Desayunos a partir de las 9 am. Contamos con desayunos completos, menú del día a partir de las 2 pm (entre semana) y snacks en la tarde noche.<a href="https://maps.app.goo.gl/8nyutjJkx4ZjvhHn8">Cómo llegar</a></p>
+      </div>
+      <button onclick='muestra_oculta("direccion2")' class="btn btn-primary" form="direccion2">Ver más</button>
+  </div>
+  <div class="direccion">
+      <h1>Cafetería Santel-Santiago Café</h1>
+      <div id="direccion3" style="display: none">
+      <p>Es un lugar pensando en ti, donde podrás compartir momentos agradables.<a href="https://maps.app.goo.gl/CdtT1B537d8UJgCP6">Cómo llegar</a> </p>
+      </div>
+      <button onclick='muestra_oculta("direccion3")' class="btn btn-primary" form="direccion3">Ver más</button>
+  </div>
+  <div class="direccion">
+      <h1>Cafetería Santel-Casa Kahlo</h1>
+      <div id="direccion4" style="display: none">
+      <p>Un lugar diseñado para reflejar el color y la vibra de la cultura mexicana, dedicado a Frida Kahlo.<a href="https://maps.app.goo.gl/DEY4BVY4v3TRWNJ39">Cómo llegar</a> </p>
+      </div>
+      <button onclick='muestra_oculta("direccion4")' class="btn btn-primary" form="direccion4">Ver más</button>
+  </div>
+  <div class="direccion">
+      <h1>Cafetería Santel-Snacks & Coffee</h1>
+      <div id="direccion5"style="display: none">
+      <p>Ofrece un ambiente encantador y acogedor donde los aromas tentadores de café recién hecho se mezclan con una irresistible variedad de snacks.<a href="https://maps.app.goo.gl/2xTpg1ZZ3j6hve7r5">Cómo llegar</a></p>
+      </div>
+      <button onclick='muestra_oculta("direccion5")' class="btn btn-primary" form="direccion5">Ver más</button>
+  </div>
+</div>
+<footer>
+  <p>Conocé nuestra Política de privacidad | ©2024 Hecho por Jusantel. Todos los derechos reservados.</p>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>

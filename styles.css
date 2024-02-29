@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+html{
+    font-family: 'Noto Serif', serif;
+    background-color:#0c0c0c;
+}
+
+/*Principal*/
+.banner {
+    position: relative;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+#sliderImg {
+    width: 100%;
+    height: 1000px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.contenedorSlider h1, .contenedorSlider h3 {
+    margin: 0;
+}/*Contenido barra de navegacion*/
+.navbar{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    /*margin: 1rem auto;*/
+}
+.logo{
+   flex-basis: 10%;
+}
+.logo img{
+    width: 410px;
+    height: 400px;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul li{
+
+    list-style: none;
+    display: inline-block;
+    margin-right: 1.875rem;
+}
+nav ul li a{
+text-decoration: none;
+color:#fff;
+font-size: 50px;
+}
+nav ul li a:hover{
+color: rgb(194, 194, 120);
+}
+.contenedorSlider{
+    width: 100%;  
+    margin:1rem auto 0;
+    text-align: center;
+    color:#fff;
+  }
+  .contenedorSlider h1{
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  }
+  .contenedorSlider h3{
+      margin: 10px auto 200px;
+      font-size: 30px;
+      line-height: 1.563rem;
+      text-align: center;
+      
+  }
+  .presentacion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: #0c0c0c;
+}
+
+.presentacion h1{
+    font-size: 90px;
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+}
+
+.presentacion p{
+    width: 70%;
+    font-size: 50px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.contenedor {
+    background-color: rgba(98, 70, 21, 0.916);
+    padding: 20px;
+}
+
+.caja {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.caja img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.caja h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;
+    color: #fff;
+}
+
+.caja p {
+    font-size: 50px;
+    color: #fff;
+}
+.carrusel{
+    background-color: #0c0c0c;
+}
+.carrusel h1{
+    font-size:70px;
+    color:#fff;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+}
+.carrusel h2{
+    font-size:50px;
+    color:#fff;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+}
+
+/* Estilo general del carrusel */
+#carouselExampleControls {
+    width: 900px; /* Establece el ancho del carrusel */
+    height: 900px; /* Establece la altura del carrusel */
+    max-width: 100%; /* Asegura que no exceda el 100% del ancho del contenedor */
+    margin: auto; /* Centra el carrusel en el contenedor */
+    background-color: black !important; /* Establece el color de fondo del carrusel, usa !important para forzar la prioridad */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+
+/* Personalización de flechas del carrusel */
+.carousel-control-prev, .carousel-control-next {
+    width: 10%; /* Ajusta el ancho de las flechas */
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el color de fondo */
+    border: none; /* Quita el borde */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #0c0c0c; /* Ajusta el color de las flechas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Añade un sobreado */
+}
+
+/* Ajuste de las imágenes del carrusel */
+.carousel-item img {
+    width: 900px; /* Establece el ancho de la imagen */
+    height: 900px; /* Establece la altura de la imagen */
+    object-fit: cover; /* Ajusta el tamaño de la imagen mientras mantiene la proporción */
+}
+.contenedorD {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    background-color: rgba(104, 72, 17, 0.916);
+    padding: 10px;
+}
+
+.direccion {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.direccion h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 34px;
+    color: rgb(253, 253, 253);
+}
+
+.direccion p {
+    font-size: 28px;
+    color: #fff;
+}
+footer {
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px; 
+    text-align: center;
+    font-size: 24px; 
+}
+
+footer p {
+    margin: 0; 
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
